@@ -16,7 +16,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="eHealth" value="9de50f26-eb73-431f-ae0a-53cf09e2a644" />
-          <factory-entry name="entityManagerFactory" value="9de50f26-eb73-431f-ae0a-53cf09e2a644" />
+          <factory-entry name="entityManagerFactory" value="32338ac4-b383-4687-bc37-4e17709f6e88" />
         </datasource-mapping>
         <naming-strategy-map>
           <unit-entry name="entityManagerFactory" />
