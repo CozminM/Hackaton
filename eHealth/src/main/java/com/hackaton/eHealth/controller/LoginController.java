@@ -28,4 +28,9 @@ public class LoginController {
     public void createUser(@RequestBody User user) {
         userService.addUser(user);
     }
+
+    @GetMapping("/get-user/{id}")
+    public User getUserByID(@PathVariable("id") Long id) {
+        return userService.getUserById(id);
+    }
 }

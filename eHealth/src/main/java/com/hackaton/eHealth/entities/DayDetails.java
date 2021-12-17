@@ -7,15 +7,14 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDetails {
+public class DayDetails {
 
     @Id
     @Column(name = "id", nullable = false)
@@ -30,5 +29,11 @@ public class UserDetails {
 
     @Column(name="consumed", nullable = false)
     private int consumedCalories;
+
+//    @OneToMany(targetEntity = Activity.class)
+//    private List<Activity> userActivities;
+//
+//    @OneToMany(targetEntity = Food.class)
+//    private List<Food> userFoodList;
 
 }
