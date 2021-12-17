@@ -6,31 +6,29 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 @Getter
 @Setter
-@Table(name = "users")
+@Table(name="activity")
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Activity {
 
     @Id
-    @Column(name = "id", nullable = false)
+    @Column(name = "id",nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "password", nullable = false)
-    private String password;
+    @Column(name = "caloriesAmount", nullable = false)
+    private int caloriesAmount;
 
-    @Column(name = "mail", nullable = false)
-    private String mail;
+//    @Column(name = "minutes", nullable = false)
+//    private int minutes;
 
-    @OneToMany(targetEntity = DayDetails.class)
-    private List<DayDetails> dayDetails;
-
+    @Column(name = "activitySymbol", nullable = true)
+    private String activitySymbolLink;
 }

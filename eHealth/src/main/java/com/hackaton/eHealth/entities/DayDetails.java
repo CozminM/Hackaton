@@ -7,28 +7,33 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.List;
 
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class UserDetails {
+public class DayDetails {
 
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "date", nullable = false)
-    private LocalDateTime date;
+    private String date;
 
     @Column(name="intake", nullable = false)
     private int intakeCalories;
 
     @Column(name="consumed", nullable = false)
     private int consumedCalories;
+
+//    @OneToMany(targetEntity = Activity.class)
+//    private List<Activity> activityList;
+//
+//    @OneToMany(targetEntity = Food.class)
+//    private List<Food> foodList;
 
 }
