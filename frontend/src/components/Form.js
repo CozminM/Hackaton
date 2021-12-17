@@ -37,7 +37,7 @@ export default function Form() {
     }
 
     return (
-      <div>
+      <div className="h-screen w-screen">
           <form onSubmit={handleSubmit}>
               <input type="text" placeholder="name" name="name" value={user.name} onChange={handleInput}/>
               <input type="text" placeholder="email" name="mail" value={user.mail} onChange={handleInput}/>

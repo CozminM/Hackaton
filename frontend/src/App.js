@@ -9,7 +9,7 @@ function App() {
     <div className="App">
         <Router>
             <Routes>
-                <Route exact path='/add-user' element={<Form/>}/>
+                <Route exact path='/' element={<Form/>}/>
             </Routes>
         </Router>
     </div>
