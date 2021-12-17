@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -26,7 +27,7 @@ public class User {
     @Column(name = "mail", nullable = false)
     private String mail;
 
-    @Column(name = "details")
-    private UserDetails userDetails;
+    @OneToMany(targetEntity = UserDetails.class)
+    private List<UserDetails> userDetails;
 
 }
