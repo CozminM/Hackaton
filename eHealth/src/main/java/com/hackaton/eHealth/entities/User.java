@@ -26,7 +26,7 @@ public class User {
     @Column(name = "mail", nullable = false)
     private String mail;
 
-//    @Column(name = "details")
-//    private UserDetails userDetails;
+    @Column(name = "details")
+    private UserDetails userDetails;
 
 }
