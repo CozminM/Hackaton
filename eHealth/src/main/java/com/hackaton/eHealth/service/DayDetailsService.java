@@ -1,7 +1,6 @@
 package com.hackaton.eHealth.service;
 
 import com.hackaton.eHealth.entities.DayDetails;
-import com.hackaton.eHealth.entities.User;
 import com.hackaton.eHealth.repository.DayDetailsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@CrossOrigin("http://localhost:3000/")
+@CrossOrigin("http://localhost:3000")
 @RestController
 public class FoodController {
 

@@ -30,10 +30,4 @@ public class DayDetails {
     @Column(name="consumed", nullable = false)
     private int consumedCalories;
 
-//    @OneToMany(targetEntity = Activity.class)
-//    private List<Activity> activityList;
-//
-//    @OneToMany(targetEntity = Food.class)
-//    private List<Food> foodList;
-
 }

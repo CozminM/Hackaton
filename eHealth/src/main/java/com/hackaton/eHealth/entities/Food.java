@@ -24,7 +24,7 @@ public class Food {
     private String name;
 
     @Column(name = "caloriesAmount", nullable = false)
-    private int amount;
+    private int caloriesAmount;
 
 //    @Column(name = "grams", nullable = false)
 //    private int grams;
