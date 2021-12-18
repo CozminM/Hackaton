@@ -22,11 +22,11 @@
 //        this.users = users;
 //    }
 //
-//    @CrossOrigin("http://localhost:3000/")
-//    @GetMapping("/get/{userId}")
-//    public ResponseEntity<Client> getUser(@PathVariable Long userId) {
-//        return new ResponseEntity<>(users.getAllById(userId), HttpStatus.OK);
-//    }
+    @CrossOrigin("http://localhost:3000/")
+    @GetMapping("/get/{userId}")
+    public ResponseEntity<Client> getUser(@PathVariable Long userId) {
+        return new ResponseEntity<>(users.getAllById(userId), HttpStatus.OK);
+    }
 //
 //    @GetMapping("/check/username/{username}")
 //    public ResponseEntity<Object> isUserNameAlreadyRegistered(@PathVariable String username ) throws UnknownHostException {
